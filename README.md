@@ -50,3 +50,13 @@ docker build -t just-iouring-demo .
 ```bash
 docker run -it --rm -v /dev/urandom:/dev/urandom -v /tmp:/tmp just-iouring-demo
 ```
+
+## Quick Install & Run (Windows / Linux / macOS)
+
+```sh
+# Install / hydrate from v11 CAS via holo-pm
+holo-pm install repository://github.com/awesome-os/demo-iouring@main
+
+# Or project & run directly via holo-project (0-byte hardlink)
+holo-project "project://cpp/demo-iouring?from=repository://github.com/awesome-os/demo-iouring@main"
+```
